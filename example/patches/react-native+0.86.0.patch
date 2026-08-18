@@ -1,0 +1,58 @@
+--- a/node_modules/react-native/src/private/components/virtualview/VirtualViewNativeComponent.js	2026-08-18 00:27:11.012802200 +0100
++++ b/node_modules/react-native/src/private/components/virtualview/VirtualViewNativeComponent.js	2026-08-18 00:23:49.991396200 +0100
+@@ -18,7 +18,7 @@
+ 
+ import codegenNativeComponent from '../../../../Libraries/Utilities/codegenNativeComponent';
+ 
+-export type NativeModeChangeEvent = Readonly<{
++export type NativeModeChangeEvent = $ReadOnly<{
+   /**
+    * Virtualization mode of the target view.
+    *
+@@ -34,7 +34,7 @@
+   /**
+    * Rect of the target view, relative to the nearest ancestor scroll container.
+    */
+-  targetRect: Readonly<{
++  targetRect: $ReadOnly<{
+     x: Double,
+     y: Double,
+     width: Double,
+@@ -51,7 +51,7 @@
+    *
+    * This can be used to determine whether and how much new content to render.
+    */
+-  thresholdRect: Readonly<{
++  thresholdRect: $ReadOnly<{
+     x: Double,
+     y: Double,
+     width: Double,
+--- a/node_modules/react-native/src/private/components/virtualview/VirtualViewExperimentalNativeComponent.js	2026-08-18 00:27:11.069800500 +0100
++++ b/node_modules/react-native/src/private/components/virtualview/VirtualViewExperimentalNativeComponent.js	2026-08-18 00:24:00.687513200 +0100
+@@ -18,7 +18,7 @@
+ 
+ import codegenNativeComponent from '../../../../Libraries/Utilities/codegenNativeComponent';
+ 
+-export type NativeModeChangeEvent = Readonly<{
++export type NativeModeChangeEvent = $ReadOnly<{
+   /**
+    * Virtualization mode of the target view.
+    *
+@@ -34,7 +34,7 @@
+   /**
+    * Rect of the target view, relative to the nearest ancestor scroll container.
+    */
+-  targetRect: Readonly<{
++  targetRect: $ReadOnly<{
+     x: Double,
+     y: Double,
+     width: Double,
+@@ -51,7 +51,7 @@
+    *
+    * This can be used to determine whether and how much new content to render.
+    */
+-  thresholdRect: Readonly<{
++  thresholdRect: $ReadOnly<{
+     x: Double,
+     y: Double,
+     width: Double,

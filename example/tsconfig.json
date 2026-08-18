@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "morse-weda-video-editor": ["../src/index"],
+      "morse-weda-video-editor/*": ["../src/*"]
+    }
+  }
+}

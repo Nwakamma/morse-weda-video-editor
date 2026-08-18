@@ -1,0 +1,67 @@
+{
+  "name": "morse-weda-video-editor",
+  "version": "0.1.0",
+  "description": "React Native / Expo SDK for the Morse Weda video editor",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "node internal/module_scripts/build.js",
+    "clean": "node internal/module_scripts/clean.js",
+    "lint": "eslint src/",
+    "test": "node internal/module_scripts/test.js",
+    "prepare": "node internal/module_scripts/prepare.js",
+    "open:ios": "node internal/module_scripts/open-ios.js",
+    "open:android": "node internal/module_scripts/open-android.js"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "morse-weda-video-editor",
+    "MorseWedaVideoEditor",
+    "video-editor"
+  ],
+  "repository": "https://github.com/Nwakamma/morse-weda-video-editor",
+  "bugs": {
+    "url": "https://github.com/Nwakamma/morse-weda-video-editor/issues"
+  },
+  "author": "Joseph Nwakamma <conwakamma@gmail.com> (https://github.com/Nwakamma)",
+  "license": "MIT",
+  "homepage": "https://github.com/Nwakamma/morse-weda-video-editor#readme",
+  "files": [
+    "build",
+    "android",
+    "ios",
+    "src",
+    "expo-module.config.json",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@types/react": "~19.1.1",
+    "babel-preset-expo": "~55.0.8",
+    "eslint": "~9.39.4",
+    "eslint-config-universe": "^15.0.3",
+    "expo": "~57.0.11",
+    "expo-module-scripts": "^56.0.3",
+    "jest": "^29.7.0",
+    "jest-expo": "~55.0.9",
+    "prettier": "^3.0.0",
+    "react": "19.2.3",
+    "react-native": "0.86.2",
+    "typescript": "^5.9.3"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "roots": [
+      "<rootDir>/src"
+    ]
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "expo-modules-core": "^57.0.11"
+  }
+}
